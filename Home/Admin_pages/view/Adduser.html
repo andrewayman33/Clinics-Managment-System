@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User Form</title>
+    <link rel="stylesheet" href="../../../assets/css/Addusercss.css">
+</head>
+<body>
+<form action="../control/add_user.php" method="post">
+    <div class="wrapper">
+        <div class="title">
+            <h1>Add user form</h1>
+        </div>
+        <div class="contact-form">
+            <div class="input-fields">
+                <input type="text" class="input" placeholder="Name" name="name" required>
+                <input type="text" class="input" placeholder="username" name="username"required>
+                <input type="text" class="input" placeholder="Password" name="Password"required>
+                <input type="text" class="input" placeholder="user type" name="usertype"required>
+            </div>
+            <div class="msg">
+                <textarea placeholder="more information"></textarea>
+                <input type="submit" class="btn" name="user" value="Signup">
+
+                <br>
+                <div class="btn"><a href="../../AdminHomePage.php">Return</a></div>
+            </div>
+        </div>
+    </div>
+    </form>
+
+</body>
+</html>

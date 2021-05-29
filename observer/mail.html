@@ -1,0 +1,15 @@
+        <?php 
+            include_once  'Database/singletone.php';
+             $this->DB=DbConnection::getInstance();
+             $conn =$this->DB ->getconnection();
+
+             $sql ="SELECT * FROM doctor;";
+              $result =$conn->query($sql);
+              while($row = $result->fetch_assoc())
+              {
+                $doctorname=$row['doctor_name'];
+                $html[]=$doctorname;
+                echo $doctorname;
+              }
+                
+                ?>
